@@ -1,17 +1,66 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Employee</title>
-</head>
-<body>
+@extends('layouts.app')
 
-    <h1>I love my Mother</h1>
-    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae fugiat quod eligendi placeat incidunt quasi quae assumenda! Praesentium natus harum pariatur, debitis ab aliquid. At a autem hic id beatae commodi nemo aliquam accusamus aliquid ad, libero nihil doloremque natus laudantium eaque modi voluptas quibusdam, harum ipsa, corrupti ut qui!</p>
+@section('mainpart')
 
-    
-    
-</body>
-</html>
+<div class="card my-4 px-0 container">
+
+    <div class="card-header">
+        <h3>All Employees</h3>
+    </div>
+
+    <div class="card-body table-responsive">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>SL</th>
+                    <th>Photo</th>
+                    <th>Name</th>
+                    <th>Designation</th>
+                    <th>Salary</th>
+                    <th>Status</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Mamun</td>
+                    <td>Mamun</td>
+                    <td>SWE</td>
+                    <td>70000</td>
+                    <td><span class="badge bg-success">active</span></td>
+                    <td>
+                        <a href="./edit.html" class="btn btn-primary btn-sm">Edit</a>
+                        <button class="btn btn-danger btn-sm">Delete</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Mamun</td>
+                    <td>Mamun</td>
+                    <td>SWE</td>
+                    <td>70000</td>
+                    <td><span class="badge bg-success">active</span></td>
+                    <td>
+                        <a href="./edit.html" class="btn btn-primary btn-sm">Edit</a>
+                        <button class="btn btn-danger btn-sm">Delete</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Mamun</td>
+                    <td>Mamun</td>
+                    <td>SWE</td>
+                    <td>70000</td>
+                    <td><span class="badge bg-warning">inactive</span></td>
+                    <td>
+                        <a href="./edit.html" class="btn btn-primary btn-sm">Edit</a>
+                        <button class="btn btn-danger btn-sm">Delete</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+@endsection

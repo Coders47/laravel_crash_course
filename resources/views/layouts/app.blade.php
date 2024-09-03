@@ -1,4 +1,32 @@
-<!DOCTYPE html>
+@include('layouts.includes.head')
+
+<body>
+
+    @include('layouts.includes.top-nav')
+
+    <div class="container-fluid">
+        <div class="row"> 
+
+            @include('layouts.includes.sidebar-menu')
+
+            <main class="col-md-9 ml-sm-auto col-lg-10 px-md-4"> 
+
+                @yield('mainpart') 
+
+            </main>
+        </div>
+    </div>
+
+    @include('layouts.includes.script')
+
+</body>
+
+</html>
+
+
+
+
+{{-- <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
         <meta charset="utf-8">
@@ -33,4 +61,4 @@
             </main>
         </div>
     </body>
-</html>
+</html> --}}

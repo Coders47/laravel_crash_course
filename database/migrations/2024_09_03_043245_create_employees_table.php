@@ -18,6 +18,7 @@ return new class extends Migration
             $table->text('image')->nullable();
             $table->integer('salary');
             $table->boolean('status');
+            $table->boolean('content');
             $table->timestamps();   
         });
     }
