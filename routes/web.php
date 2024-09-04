@@ -18,7 +18,11 @@ Route::view('profile', 'profile')
 
 // Route::get('/employee', [HomeController::class, 'index']); 
 
-Route::get('/employee', [EmployeeController::class, 'index'])->name('employee'); 
+Route::get('/employee', [EmployeeController::class, 'index'])->name('employee');
+
+Route::get('/employee/create', [EmployeeController::class, 'create'])->name('employee-create');
+
+Route::post('/employee/store', [EmployeeController::class, 'store'])->name('employee.store');
 
 // ------
 

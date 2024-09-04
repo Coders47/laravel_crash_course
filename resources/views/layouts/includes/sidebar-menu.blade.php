@@ -8,7 +8,7 @@
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="./create.html">
+                <a class="nav-link" aria-current="page" href={{route('employee-create')}}>
                     <span data-feather="home"></span>
                     Add Employee
                 </a>
